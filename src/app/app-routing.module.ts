@@ -28,19 +28,19 @@ const routes: Routes = [
     children: [
       { path: 'headerAfterLogin', component: HeaderAfterLoginComponent },
       { path: 'dashboard-left', component: DashboardLeftComponent },
+      { path: 'recent', component: RecentComponent },
+      { path: 'all', component: AllComponent },
+      { path: 'groups', component: GroupsComponent },
+      { path: 'friends', component: FriendsComponent },
       {  
-        path: 'finalDashboard', component: FinalDashboardComponent,
+        path: '', component: FinalDashboardComponent,
         children:
           [
             { path: 'addExpense', component: AddExpenseComponent },
             { path: 'settle', component: SettleComponent }
           ]
       },
-      { path: 'recent', component: RecentComponent },
-      { path: 'all', component: AllComponent },
-      { path: 'groups', component: GroupsComponent },
-      { path: 'friends', component: FriendsComponent },
-
+      
     ]
   },
   { path: '', component: HomeComponent },

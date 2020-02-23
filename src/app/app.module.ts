@@ -18,6 +18,7 @@ import { SettleComponent } from './settle/settle.component';
 import { AllComponent } from './all/all.component';
 import { GroupsComponent } from './groups/groups.component';
 import { FriendsComponent } from './friends/friends.component';
+import { DashboardHeaderComponent } from './dashboard-header/dashboard-header.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { FriendsComponent } from './friends/friends.component';
     SettleComponent,
     AllComponent,
     GroupsComponent,
-    FriendsComponent
+    FriendsComponent,
+    DashboardHeaderComponent
   ],
   imports: [
     BrowserModule,

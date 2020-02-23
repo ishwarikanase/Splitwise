@@ -1,0 +1,27 @@
+.sidebar a{
+    display: block;
+    padding: 0px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    width:100px;
+}
+.sidebar{
+    margin-left: 20px;
+    margin-top: -22.5px;
+    width: 150px;
+    height: 1000px;
+    border-right:2px solid gray;
+    text-align: left;
+
+}
+.sidebar a:hover{
+    background-color: darkgrey;
+}
+.sidebar a:active{
+    background-color: gray;
+    color: #39a385;
+}
+.btn{
+    text-align: left;
+}

@@ -4,12 +4,25 @@ p{
     margin-left: 0px;
 }
 
-.owePrice{
+.owe{
     color: red;
 }
-.owedPrice{
+.owed{
     color: #39a385;
 }
 .label{
     color: gray;
+}
+.row{
+    padding: 0px;
+}
+a:link, a:visited {
+    color:black;
+    text-decoration: none;
+    padding: 10px;
+    padding-right: 200px;
+}
+a:hover{
+    background-color: #F0F0F0;
+    
 }

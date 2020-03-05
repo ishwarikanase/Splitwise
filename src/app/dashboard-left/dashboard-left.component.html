@@ -1,22 +1,17 @@
 <div class="sidebar">
-    <ul>
+    <ul class="other">
         <li><a routerLink="/dashboard">Dashboard</a></li>
         <li><a routerLink="./recent">Recent activity</a></li>
         <li><a routerLink="./all">All expenses</a></li>
         <li>Groups
             <ul class="nestedGroups">
-                <li><a routerLink="./all">Avengers</a></li>
-                <li><a routerLink="./all">WE</a></li>
-                <li><a routerLink="./all">TIPS</a></li>
-                <li><a routerLink="./all">FC</a></li>
+                <li (click)="onSelectGroup(group)" *ngFor="let group of groups"><a>{{group.name}}</a></li>
             </ul>
         </li>
         <li>Friends
             <ul class="nestedFriends">
-                <li><a routerLink="./all">Bhor Pooja</a></li>
-                <li><a routerLink="./all">Raj K.</a></li>
-                <li><a routerLink="./all">Amruta Vidhate</a></li>
-                <li><a routerLink="./all">Sarla Hume</a></li>
+                <li (click)="onSelectFriend(friend)" *ngFor="let friend of friends"><a>{{friend.name}}</a>
+                </li>
             </ul>
         </li>
     </ul>

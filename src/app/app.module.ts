@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +21,12 @@ import { AllComponent } from './all/all.component';
 import { GroupsComponent } from './groups/groups.component';
 import { FriendsComponent } from './friends/friends.component';
 import { DashboardHeaderComponent } from './dashboard-header/dashboard-header.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { EmailComponent } from './email/email.component';
+import { PhoneNumberComponent } from './phone-number/phone-number.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule, MatIconModule, MatInputModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -38,11 +46,21 @@ import { DashboardHeaderComponent } from './dashboard-header/dashboard-header.co
     AllComponent,
     GroupsComponent,
     FriendsComponent,
-    DashboardHeaderComponent
+    DashboardHeaderComponent,
+    ForgotPasswordComponent,
+    EmailComponent,
+    PhoneNumberComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatIconModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
